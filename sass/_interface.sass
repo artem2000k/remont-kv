@@ -1,0 +1,55 @@
+*
+    box-sizing: border-box
+
+body
+    font-family: 'Museo Sans Light', sans-serif
+
+img
+    max-width: 100%
+    
+.container
+    width: 1170px
+    margin: auto
+@media (max-width: 1200px)
+    .container
+        width: 960px
+@media (max-width: 960px)
+    .container
+        width: 768px
+@media (max-width: 768px)
+    .container
+        width: 95%
+        max-width: 750px
+
+.button
+    border-radius: 10px
+    background-color: $main-color
+    border: none
+    padding: 18px 30px
+    &:hover
+        background-color: lighten($main-color, 10%)
+        cursor: pointer
+    &:focus
+        outline: none
+
+.section
+    padding: 90px 0  
+    &-title
+        max-width: 600px
+        text-align: center
+        font-size: 24px
+        font-family: 'Museo Sans Bold', sans-serif
+    &-subtitle
+        display: block
+        font-size: 16px
+
+.input
+    border: 1px solid $border-input
+    padding: 20px 26px
+    font-size: 15px
+    border-radius: 10px
+
+.arrows
+    &__lift, &__right
+        &:hover
+            cursor: pointer

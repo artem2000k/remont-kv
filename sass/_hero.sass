@@ -1,0 +1,64 @@
+.hero
+    padding-top: 80px
+    padding-bottom: 35px
+    background-color: $gray
+    &-block
+        display: flex
+        align-items: center
+    &-text
+        flex-basis: 50%
+        padding-right: 100px
+        &__title
+            font-size: 36px
+            font-weight: 700
+            line-height: 55px
+            margin-bottom: 20px
+            font-family: 'Museo Sans Bold'
+        &__subtitle
+            display: inline-block
+            font-size: 20px
+            margin-bottom: 60px
+    &-list
+        margin: 0
+        padding: 0
+        &__item
+            display: flex
+            align-items: center
+            margin-bottom: 25px
+            &:last-child
+                margin-bottom: 0
+        &__img
+            width: 40px
+            height: 40px
+            border: 2px solid $main-color
+            display: flex
+            align-items: center
+            justify-content: center
+            border-radius: 50%
+            margin-right: 30px
+        &__text
+            max-width: 300px
+
+@media (max-width: 1200px)
+    .hero
+        &-block
+            flex-direction: column
+        &-list
+            margin-bottom: 45px
+        &-text
+            padding: 0
+@media (max-width: 768px)
+    .hero
+        padding: 30px 0
+        &-text
+            &__title
+                font-size: 24px
+                line-height: 1.4
+                margin-bottom: 15px
+            &__subtitle
+                font-size: 16px
+                margin-bottom: 45px
+        &-list
+            &__text
+                font-size: 12px
+                max-width: 220px

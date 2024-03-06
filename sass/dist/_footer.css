@@ -1,0 +1,41 @@
+.footer {
+  position: relative;
+}
+
+.map {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+}
+
+.contacts {
+  flex-basis: 50%;
+  padding-top: 100px;
+  padding-left: 200px;
+}
+.contacts__title {
+  font-size: 22px;
+  left: 1.4;
+}
+.contacts-block {
+  display: flex;
+  justify-content: flex-end;
+}
+.contacts-list {
+  margin-top: 100px;
+  padding: 0;
+  list-style: none;
+}
+.contacts-list__icon {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  margin-right: 25px;
+}
+.contacts-list__item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
